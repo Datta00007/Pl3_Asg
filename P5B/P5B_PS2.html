@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Temperature Conversion</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <nav>
+            <ul>
+                <li><a class="active" href="/index.html">Home</a></li>
+            </ul>
+        </nav>
+    </div>
+    <header>
+        <h1>Program for Celsius To Fahrenheit conversion</h1>
+    </header>
+    <hr />
+    <article>
+        <section>
+            <h3>Formula for converting Celsius scale to Fahrenheit scale</h3>
+            <small>T(<sup>o</sup>F) = T(<sup>o</sup>C) × 9/5 + 32</small>
+        </section>
+        <hr />
+
+        <section>
+            <h3>Code</h3>
+            <h4>Javascript code of celcius to fahrenheit conversion</h4>
+            <code>
+            <pre>
+        let celsius = document.getElementById("celsius");
+        let fahrenheit = document.getElementById("fahrenheit");
+
+        function celToFar() {
+            let output = (parseFloat(celsius.value) * 9 / 5) + 32;
+            fahrenheit.value = parseFloat(output.toFixed(2));
+            console.log(output);
+        }
+
+        function farToCel() {
+            let output = (parseFloat(fahrenheit.value) - 32) * 5 / 9;
+            celsius.value = parseFloat(output.toFixed(2));
+            console.log(output);
+        }
+          </pre
+            >
+          </code>
+        </section>
+        <hr />
+
+
+        <section>
+            <h3>Variable used in the program</h3>
+            <var>fahrenheit</var> <var>celsius</var>
+        </section>
+    </article>
+    <hr />
+    <br>
+
+    <div class="wrapper">
+        <div class="head">
+            <h1>
+                <p>Temperature Convertor</p>
+            </h1>
+        </div>
+        <div class="container">
+            <label for="celsius"> <b>Celsius</b></label>
+            <input type="number" id="celsius" oninput="celToFar()">
+        </div>
+        <div class="container">
+            <label for="fahrenheit"><b>Fahrenheit</b></label>
+            <input type="number" id="fahrenheit" oninput="farToCel()">
+        </div>
+    </div>
+</body>
+    <script>
+        let celsius = document.getElementById("celsius");
+        let fahrenheit = document.getElementById("fahrenheit");
+
+        function celToFar() {
+            let output = (parseFloat(celsius.value) * 9 / 5) + 32;
+            fahrenheit.value = parseFloat(output.toFixed(2));
+            console.log(output);
+        }
+
+        function farToCel() {
+            let output = (parseFloat(fahrenheit.value) - 32) * 5 / 9;
+            celsius.value = parseFloat(output.toFixed(2));
+            console.log(output);
+        }
+    </script>
+
+
+</html>
