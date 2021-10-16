@@ -1,0 +1,119 @@
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  margin: 0;
+  padding: 0;
+  height: 10vh;
+  background: black;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.4);
+}
+nav ul {
+  float: left;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  color: white;
+  display: block;
+  padding: 1vh;
+  line-height: 3vh;
+  text-decoration: none;
+  font-size: 100%;
+  transition: 0.5s;
+}
+nav ul li a:hover {
+  background-color: #ddd;
+  color: black;
+  transition: 0.5s;
+}
+
+nav ul ul {
+  position: absolute;
+  top: 12vh;
+  border-top: 1vh solid #04aa6d;
+  opacity: 0;
+  visibility: hidden;
+}
+nav ul li:hover > ul {
+  top: 12vw;
+
+  font-size: small;
+  opacity: 1;
+  visibility: visible;
+  transition: 0.8s linear;
+  background-color: #04aa6d;
+}
+.active {
+  background-color: #04aa6d;
+}
+
+img {
+  border-radius: 8px;
+}
+.wrapper {
+  width: 30vw;
+  background-color: #ffffff;
+  margin: 30vh 0 4vh 0;
+  padding: 0 8vh 4vh 9vh;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 35%;
+  top: 35%;
+  box-shadow: 0 20px 25px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: large;
+}
+
+.container {
+  width: 50%;
+  margin: 10px 0;
+}
+
+input {
+  width: 90%;
+  height: 50px;
+  border-radius: 5px;
+  color: darkblue;
+  border: 2px solid #d2d2d2;
+  outline: none;
+  margin-top: 8px;
+  padding: 0 10px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: large;
+}
+.Points {
+  color: blue;
+}
+
+.name {
+  color: red;
+}
+.head {
+  color: red;
+}
+
+input:focus {
+  border-color: chartreuse;
+}
+
+table.ptable {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding: 10px;
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+
+table,
+tr,
+th,
+td {
+  border: 1px solid black;
+}
